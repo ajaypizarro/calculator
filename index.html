@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="#" name="calculator" class="main">
+                    <input type="text" class="display form-control" name="display" id="display"><br>
+                    <input type="button" class="btn btn-primary mx-1 px-3 col-5" value="AC" id="clear">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="C" onclick="backSpace()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="/"
+                    onclick="document.calculator.display.value+='/'"><br><br>
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="7" onclick="seven()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="8" onclick="eight()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="9" onclick="nine()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="*"
+                    onclick="document.calculator.display.value+='*'"><br><br>
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="4" onclick="four()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="5" onclick="five()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="6" onclick="six()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="-"
+                    onclick="document.calculator.display.value+='-'"><br><br>
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="1" onclick="one()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="2" onclick="two()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="3" onclick="three()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="+"
+                    onclick="document.calculator.display.value+='+'"><br><br>
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="0" onclick="zero()">
+                    <input type="button" class="btn btn-primary mx-1 px-3" value="." onclick="point()">
+                    <input type="button" class="btn btn-primary mx-1 px-3 col-5" value="="
+                    onclick="document.calculator.display.value = eval(calculator.display.value)">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./custom.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
